@@ -1,10 +1,14 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
         String znaczek;
         znaczek = "*";
         int dlugoscBokow = 21;
-
+        System.out.println("Podaj z ilu * ma składać się kwadrat");
+        Scanner scanner = new Scanner(System.in);
+        dlugoscBokow = scanner.nextInt();
         for (int i = 1; i <= dlugoscBokow; i++) {
             for (int j = 1; j <= dlugoscBokow; j++) {
                 znaczek = "   ";
